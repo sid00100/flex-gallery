@@ -1,4 +1,66 @@
-/* css starts here */
 body {
     margin: 0;
+}
+
+.panel-container {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0;
+    flex: 1;
+    transition: flex 0.5s;
+}
+
+.panel>p {
+    margin: 0;
+    font-size: 2rem;
+    transition: font-size 0.5s;
+}
+
+p:first-child{
+    transform: translateY(-1000%);
+    transition: transform 0.5s;
+}
+p:last-child{
+    transform: translateY(1000%);
+    transition: transform 0.5s;
+}
+.active>p:first-child{
+    transform: translateY(0);
+}
+
+.panel1 {
+    background-color: green;
+}
+
+.panel2 {
+    background-color: red;
+}
+
+.panel3 {
+    background-color: grey;
+}
+
+.panel4 {
+    background-color: blue;
+}
+
+.center {
+    font-size: 2rem;
+}
+
+
+.open{
+    flex: 5;
+}
+
+.open>p{
+    font-size: 3rem;
+    transform: translateY(0);
 }
